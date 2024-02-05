@@ -1,10 +1,11 @@
 name: cv
-description: "A new Flutter project."
+description: "Artur Saidov's Resume"
 publish_to: "none"
 version: 0.1.0
 
 environment:
   sdk: ">=3.2.6 <4.0.0"
+  flutter: ">=3.16.9 <4.0.0"
 
 dependencies:
   flutter:
