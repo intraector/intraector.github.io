@@ -31,7 +31,9 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+build/*
+build/**/
+!build/web/
 /.dart_tool/**
 .dart_tool/package_config_subset
 .dart_tool/package_config.json
@@ -43,7 +45,7 @@ pubspec.lock
 .metadata
 .packages
 .packages~dev
-/build/**
+# /build/**
 ios/Podfile.lock
 
 # Symbolication related
