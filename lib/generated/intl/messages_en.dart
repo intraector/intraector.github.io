@@ -43,12 +43,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "Apps development for iOS and Android|App architecture design|Mentoring other developers|Code review|Communication with clients|Estimation of tasks|Interviewing new developers|Scrum/Kanban|Participation in the development of the company\'s internal tools"),
         "contacts": MessageLookupByLibrary.simpleMessage("Contacts"),
         "copied": MessageLookupByLibrary.simpleMessage("Copied"),
+        "currentlyBased":
+            MessageLookupByLibrary.simpleMessage("Currently based in"),
         "education": MessageLookupByLibrary.simpleMessage("Education"),
         "email": MessageLookupByLibrary.simpleMessage("intraector@gmail.com"),
         "experience": MessageLookupByLibrary.simpleMessage("Experience"),
         "jobTitle":
             MessageLookupByLibrary.simpleMessage("Senior Flutter Developer"),
         "location": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
+        "location1": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
         "name": MessageLookupByLibrary.simpleMessage("Artur Saidov"),
         "portfolio": MessageLookupByLibrary.simpleMessage("Portfolio"),
         "profSkills":

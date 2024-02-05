@@ -140,6 +140,26 @@ class S {
     );
   }
 
+  /// `Currently based in`
+  String get currentlyBased {
+    return Intl.message(
+      'Currently based in',
+      name: 'currentlyBased',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Antalya, Turkey`
+  String get location1 {
+    return Intl.message(
+      'Antalya, Turkey',
+      name: 'location1',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Analytic mind`
   String get aboutMeLine1 {
     return Intl.message(

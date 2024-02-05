@@ -144,6 +144,22 @@ class AboutMe extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           Text(
+            context.s.currentlyBased.toUpperCase(),
+            style: AppStyles.s18.copyWith(
+              color: AppColors.shade1,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 2,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            context.s.location1,
+            style: AppStyles.s18.copyWith(
+              color: AppColors.shade1,
+            ),
+          ),
+          const SizedBox(height: 40),
+          Text(
             context.s.aboutMe.toUpperCase(),
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
