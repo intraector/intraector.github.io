@@ -90,6 +90,16 @@ class S {
     );
   }
 
+  /// `Contacts`
+  String get contacts {
+    return Intl.message(
+      'Contacts',
+      name: 'contacts',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Experience`
   String get experience {
     return Intl.message(
@@ -100,11 +110,31 @@ class S {
     );
   }
 
+  /// `About me`
+  String get aboutMe {
+    return Intl.message(
+      'About me',
+      name: 'aboutMe',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Resume`
   String get resume {
     return Intl.message(
       'Resume',
       name: 'resume',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Copied`
+  String get copied {
+    return Intl.message(
+      'Copied',
+      name: 'copied',
       desc: '',
       args: [],
     );
@@ -170,10 +200,10 @@ class S {
     );
   }
 
-  /// `Graduated in 2005 with Masters Degree in Mathematics`
+  /// `Graduated in 2005, Master's Degree in Mathematics`
   String get universityPeriod {
     return Intl.message(
-      'Graduated in 2005 with Masters Degree in Mathematics',
+      'Graduated in 2005, Master\'s Degree in Mathematics',
       name: 'universityPeriod',
       desc: '',
       args: [],

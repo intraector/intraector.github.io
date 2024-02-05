@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'theme/app_styles.dart';
 import 'utils/context_ext.dart';
 import 'widgets/about_me.dart';
+import 'widgets/education.dart';
 import 'widgets/experience.dart';
 import 'widgets/main_badge.dart';
+import 'widgets/skills.dart';
 
 class SmallScreen extends StatelessWidget {
   const SmallScreen({super.key});
@@ -39,10 +41,17 @@ class SmallScreen extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         const AboutMe(),
-        const SizedBox(height: 16),
         const Padding(
           padding: EdgeInsets.all(32),
           child: Experience(),
+        ),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 32),
+          child: Skills(),
+        ),
+        const Padding(
+          padding: EdgeInsets.all(32),
+          child: Education(),
         ),
       ],
     );

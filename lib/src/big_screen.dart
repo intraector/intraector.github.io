@@ -51,6 +51,7 @@ class BigScreen extends StatelessWidget {
               const Skills(),
               const SizedBox(height: 32),
               const Education(),
+              const SizedBox(height: 32),
             ],
           ),
         ),

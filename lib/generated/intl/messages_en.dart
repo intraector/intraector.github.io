@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aboutMe": MessageLookupByLibrary.simpleMessage("About me"),
         "aboutMeLine1": MessageLookupByLibrary.simpleMessage("Analytic mind"),
         "aboutMeLine2": MessageLookupByLibrary.simpleMessage(
             "Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat."),
@@ -40,6 +41,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "[2021 - present day] Flutter Lead Developer"),
         "company3Tasks": MessageLookupByLibrary.simpleMessage(
             "Apps development for iOS and Android|App architecture design|Mentoring other developers|Code review|Communication with clients|Estimation of tasks|Interviewing new developers|Scrum/Kanban|Participation in the development of the company\'s internal tools"),
+        "contacts": MessageLookupByLibrary.simpleMessage("Contacts"),
+        "copied": MessageLookupByLibrary.simpleMessage("Copied"),
         "education": MessageLookupByLibrary.simpleMessage("Education"),
         "email": MessageLookupByLibrary.simpleMessage("intraector@gmail.com"),
         "experience": MessageLookupByLibrary.simpleMessage("Experience"),
@@ -54,7 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "skillsList": MessageLookupByLibrary.simpleMessage(
             "Flutter Web, Android, iOS, Bloc, Provider, MVVM, MVP, Dio, Http, Clean Architecture, SOLID, REST, Google Maps, Git, Firebase, Storage, Cloud Messaging, Cloud Functions, authorization, animations, multiple app flavors/targets, dependency injection, unit testing, mobile analytics, publishing"),
         "universityPeriod": MessageLookupByLibrary.simpleMessage(
-            "Graduated in 2005 with Masters Degree in Mathematics"),
+            "Graduated in 2005, Master\'s Degree in Mathematics"),
         "universityTitle": MessageLookupByLibrary.simpleMessage(
             "Dagestan State University, Russia")
       };

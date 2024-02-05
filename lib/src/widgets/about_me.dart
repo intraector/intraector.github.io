@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_styles.dart';
 import '../utils/context_ext.dart';
+import 'copy_button.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({super.key, this.constraints});
@@ -36,6 +37,121 @@ class AboutMe extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            context.s.contacts.toUpperCase(),
+            style: AppStyles.s18.copyWith(
+              color: AppColors.shade1,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 2,
+            ),
+          ),
+          const SizedBox(height: 8),
+          RichText(
+            text: TextSpan(
+              text: 'Telegram:',
+              style: AppStyles.s18.copyWith(
+                color: AppColors.shade1,
+              ),
+              children: [
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: TextButton(
+                    onPressed: () {
+                      launchUrl(
+                        Uri.parse('https://t.me/intraector'),
+                      );
+                    },
+                    child: Text(
+                      '@intraector',
+                      style: AppStyles.s18.copyWith(
+                        color: AppColors.shade1,
+                      ),
+                    ),
+                  ),
+                ),
+                const WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: CopyButton(
+                    text: 'intraector',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          RichText(
+            text: TextSpan(
+              text: 'Email:',
+              style: AppStyles.s18.copyWith(
+                color: AppColors.shade1,
+              ),
+              children: [
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: TextButton(
+                    onPressed: () {
+                      launchUrl(
+                        Uri.parse('mailto:intraector@gmail.com'),
+                      );
+                    },
+                    child: Text(
+                      'intraector@gmail.com',
+                      style: AppStyles.s18.copyWith(
+                        color: AppColors.shade1,
+                      ),
+                    ),
+                  ),
+                ),
+                const WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: CopyButton(
+                    text: 'intraector@gmail.com',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          RichText(
+            text: TextSpan(
+              text: 'LinkedIn:',
+              style: AppStyles.s18.copyWith(
+                color: AppColors.shade1,
+              ),
+              children: [
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: TextButton(
+                    onPressed: () {
+                      launchUrl(
+                        Uri.parse('https://www.linkedin.com/in/intraector/'),
+                      );
+                    },
+                    child: Text(
+                      'intraector',
+                      style: AppStyles.s18.copyWith(
+                        color: AppColors.shade1,
+                      ),
+                    ),
+                  ),
+                ),
+                const WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: CopyButton(
+                    text: 'intraector',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 40),
+          Text(
+            context.s.aboutMe.toUpperCase(),
+            style: AppStyles.s18.copyWith(
+              color: AppColors.shade1,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 2,
+            ),
+          ),
+          const SizedBox(height: 8),
           Text(
             context.s.aboutMeLine1,
             style: AppStyles.s18.copyWith(
