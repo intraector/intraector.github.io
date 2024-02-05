@@ -150,10 +150,10 @@ class S {
     );
   }
 
-  /// `Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat.`
+  /// `Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat`
   String get aboutMeLine2 {
     return Intl.message(
-      'Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat.',
+      'Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat',
       name: 'aboutMeLine2',
       desc: '',
       args: [],

@@ -165,12 +165,6 @@ class AboutMe extends StatelessWidget {
               color: AppColors.shade1,
             ),
           ),
-          Text(
-            context.s.aboutMeLine2,
-            style: AppStyles.s18.copyWith(
-              color: AppColors.shade1,
-            ),
-          ),
           const SizedBox(height: 40),
           Text(
             context.s.portfolio.toUpperCase(),

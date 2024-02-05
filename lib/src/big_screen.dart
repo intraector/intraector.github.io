@@ -19,9 +19,12 @@ class BigScreen extends StatelessWidget {
       children: [
         Column(
           children: [
-            Image.asset('lib/assets/face.jpg'),
+            Image.asset(
+              'lib/assets/face.jpg',
+              scale: 0.8,
+            ),
             const AboutMe(
-              constraints: BoxConstraints(maxWidth: 300),
+              constraints: BoxConstraints(maxWidth: 375),
             ),
           ],
         ),

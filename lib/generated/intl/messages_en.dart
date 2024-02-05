@@ -25,7 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "aboutMe": MessageLookupByLibrary.simpleMessage("About me"),
         "aboutMeLine1": MessageLookupByLibrary.simpleMessage("Analytic mind"),
         "aboutMeLine2": MessageLookupByLibrary.simpleMessage(
-            "Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat."),
+            "Hardworking, attentive, stress-resistant, initiative-taking, team-oriented, neat"),
         "company1Name": MessageLookupByLibrary.simpleMessage("ZapApp"),
         "company1Period": MessageLookupByLibrary.simpleMessage(
             "[2019 - 2021] Flutter Developer"),
