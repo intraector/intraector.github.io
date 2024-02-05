@@ -3,7 +3,7 @@ analyzer:
   exclude:
     - test/.test_coverage.dart
     - lib/generated_plugin_registrant.dart
-    - lib/core/l10n/generated/**
+    - lib/generated/**
 linter:
   rules:
     prefer_relative_imports: true
