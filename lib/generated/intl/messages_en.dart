@@ -51,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "jobTitle":
             MessageLookupByLibrary.simpleMessage("Senior Flutter Developer"),
         "location": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
+        "location0": MessageLookupByLibrary.simpleMessage("Moscow, Russia"),
         "location1": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
         "name": MessageLookupByLibrary.simpleMessage("Artur Saidov"),
         "portfolio": MessageLookupByLibrary.simpleMessage("Portfolio"),

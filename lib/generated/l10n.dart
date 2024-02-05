@@ -160,6 +160,16 @@ class S {
     );
   }
 
+  /// `Moscow, Russia`
+  String get location0 {
+    return Intl.message(
+      'Moscow, Russia',
+      name: 'location0',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Analytic mind`
   String get aboutMeLine1 {
     return Intl.message(

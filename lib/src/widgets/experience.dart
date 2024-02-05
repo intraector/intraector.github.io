@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../generated/l10n.dart';
 import '../theme/app_colors.dart';
@@ -12,6 +13,7 @@ class Experience extends StatelessWidget {
     return [
       Exp(
         company: s.company3Name,
+        url: 'https://simplecode.kz',
         period: s.company3Period,
         tasks: s.company3Tasks.split('|'),
       ),
@@ -52,10 +54,12 @@ class Exp {
     required this.company,
     required this.period,
     required this.tasks,
+    this.url,
   });
 
   final String company;
   final String period;
+  final String? url;
   final List<String> tasks;
 }
 
@@ -69,21 +73,36 @@ class ExpTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final title = Text(
+      exp.company,
+      style: AppStyles.s18.copyWith(
+        color: AppColors.text,
+        fontWeight: FontWeight.w900,
+      ),
+    );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 20),
-        Text(
-          exp.company,
-          style: AppStyles.s18.copyWith(
-            color: AppColors.text,
-            fontWeight: FontWeight.w900,
+        if (exp.url != null)
+          TextButton(
+            onPressed: () {
+              launchUrl(Uri.parse(exp.url!));
+            },
+            child: title,
+          )
+        else
+          Padding(
+            padding: const EdgeInsets.only(left: 12),
+            child: title,
           ),
-        ),
-        Text(
-          exp.period,
-          style: AppStyles.s18.copyWith(
-            color: AppColors.text,
+        Padding(
+          padding: const EdgeInsets.only(left: 12),
+          child: Text(
+            exp.period,
+            style: AppStyles.s18.copyWith(
+              color: AppColors.text,
+            ),
           ),
         ),
         const SizedBox(height: 8),
