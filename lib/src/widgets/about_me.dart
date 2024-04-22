@@ -153,8 +153,16 @@ class AboutMe extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
+            context.s.location2,
+            style: AppStyles.s18.copyWith(
+              color: AppColors.shade1,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
             context.s.location1,
             style: AppStyles.s18.copyWith(
+              decoration: TextDecoration.lineThrough,
               color: AppColors.shade1,
             ),
           ),

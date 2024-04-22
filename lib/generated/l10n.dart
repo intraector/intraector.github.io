@@ -150,6 +150,16 @@ class S {
     );
   }
 
+  /// `Tbilisi, Georgia`
+  String get location2 {
+    return Intl.message(
+      'Tbilisi, Georgia',
+      name: 'location2',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Antalya, Turkey`
   String get location1 {
     return Intl.message(

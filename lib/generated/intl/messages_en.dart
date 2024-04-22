@@ -53,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "location": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
         "location0": MessageLookupByLibrary.simpleMessage("Moscow, Russia"),
         "location1": MessageLookupByLibrary.simpleMessage("Antalya, Turkey"),
+        "location2": MessageLookupByLibrary.simpleMessage("Tbilisi, Georgia"),
         "name": MessageLookupByLibrary.simpleMessage("Artur Saidov"),
         "portfolio": MessageLookupByLibrary.simpleMessage("Portfolio"),
         "profSkills":
