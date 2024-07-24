@@ -1,3 +1,5 @@
-# cv
+# Resume
 
-A new Flutter project.
+My resume website.
+
+Head to [ector.dev](https://ector.dev) to see it.

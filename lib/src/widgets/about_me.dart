@@ -12,6 +12,7 @@ class AboutMe extends StatelessWidget {
   final BoxConstraints? constraints;
 
   Map<String, String> get portfolio => const {
+        'myQG Android': 'https://play.google.com/store/apps/details?id=kz.qazaqgaz.mygq',
         'Tayyab Banking Android': 'https://play.google.com/store/apps/details?id=co.tayyab.app&gl=kz',
         'Tayyab Banking iOS': 'https://apps.apple.com/tr/app/tayyab/id6446256809',
         'Enbek.kz Android': 'https://play.google.com/store/apps/details?id=kz.enbek.emobi&gl=kz',
@@ -24,7 +25,7 @@ class AboutMe extends StatelessWidget {
         'CenterHome iOS': 'https://apps.apple.com/tr/app/center-home/id1593535565',
         'Upravdom Android': 'https://play.google.com/store/apps/details?id=kz.upravdom.osi&gl=kz',
         'PoiskVagona iOS': 'https://apps.apple.com/tr/app/poiskvagona-kz/id1596454186',
-        'Zab.Bar iOS': 'https://apps.apple.com/tr/app/zanbar/id1516103496',
+        'ZanBar iOS': 'https://apps.apple.com/tr/app/zanbar/id1516103496',
         'ZapApp Android': 'https://play.google.com/store/apps/details?id=com.tenebre1592.ZapApp',
       };
 
