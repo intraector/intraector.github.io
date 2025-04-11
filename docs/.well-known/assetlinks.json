@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "kz.qazaqgaz.mygq",
+    "sha256_cert_fingerprints":
+    ["f4:f3:b7:cc:54:93:a6:30:a8:66:60:de:cd:05:2e:af:48:07:c0:b8:40:ca:ca:b0:48:db:13:7e:50:f7:56:b7"]
+  }
+}]
