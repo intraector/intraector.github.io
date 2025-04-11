@@ -3,7 +3,11 @@ analyzer:
   exclude:
     - test/.test_coverage.dart
     - lib/generated_plugin_registrant.dart
+    - lib/core/l10n/generated/**
     - lib/generated/**
+    - mason/**
+formatter:
+  page_width: 120
 linter:
   rules:
     prefer_relative_imports: true
@@ -48,17 +52,13 @@ linter:
     null_check_on_nullable_type_parameter: true
     null_closures: true
     omit_local_variable_types: true
-    package_api_docs: true
     package_names: true
     package_prefixed_library_names: true
     parameter_assignments: true
     prefer_adjacent_string_concatenation: true
     prefer_collection_literals: true
     prefer_conditional_assignment: true
-    prefer_const_constructors: true
     prefer_const_constructors_in_immutables: true
-    prefer_const_declarations: true
-    prefer_const_literals_to_create_immutables: true
     prefer_contains: true
     prefer_equal_for_default_values: true
     prefer_final_in_for_each: true
@@ -82,7 +82,6 @@ linter:
     prefer_typing_uninitialized_variables: true
     prefer_void_to_null: true
     recursive_getters: true
-    require_trailing_commas: true
     secure_pubspec_urls: true
     sized_box_for_whitespace: true
     sized_box_shrink_expand: true
@@ -134,3 +133,7 @@ linter:
     use_to_and_as_if_applicable: true
     valid_regexps: true
     void_checks: true
+    no_leading_underscores_for_local_identifiers: false
+    strict_top_level_inference: true
+    unnecessary_underscores: true
+    unnecessary_async: true

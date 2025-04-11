@@ -12,7 +12,10 @@ class AboutMe extends StatelessWidget {
   final BoxConstraints? constraints;
 
   Map<String, String> get portfolio => const {
+        'myQG iOS': 'https://apps.apple.com/app/myqg/id6566190317',
         'myQG Android': 'https://play.google.com/store/apps/details?id=kz.qazaqgaz.mygq',
+        'Protarget iOS': 'https://apps.apple.com/app/pro-target/id6736693468',
+        'Protarget Android': 'https://play.google.com/store/apps/details?id=kz.protarget.protarget',
         'Tayyab Banking Android': 'https://play.google.com/store/apps/details?id=co.tayyab.app&gl=kz',
         'Tayyab Banking iOS': 'https://apps.apple.com/tr/app/tayyab/id6446256809',
         'Enbek.kz Android': 'https://play.google.com/store/apps/details?id=kz.enbek.emobi&gl=kz',
@@ -47,38 +50,6 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          RichText(
-            text: TextSpan(
-              text: 'Telegram:',
-              style: AppStyles.s18.copyWith(
-                color: AppColors.shade1,
-              ),
-              children: [
-                WidgetSpan(
-                  alignment: PlaceholderAlignment.middle,
-                  child: TextButton(
-                    onPressed: () {
-                      launchUrl(
-                        Uri.parse('https://t.me/intraector'),
-                      );
-                    },
-                    child: Text(
-                      '@intraector',
-                      style: AppStyles.s18.copyWith(
-                        color: AppColors.shade1,
-                      ),
-                    ),
-                  ),
-                ),
-                const WidgetSpan(
-                  alignment: PlaceholderAlignment.middle,
-                  child: CopyButton(
-                    text: 'intraector',
-                  ),
-                ),
-              ],
-            ),
-          ),
           RichText(
             text: TextSpan(
               text: 'Email:',
@@ -128,6 +99,38 @@ class AboutMe extends StatelessWidget {
                     },
                     child: Text(
                       'intraector',
+                      style: AppStyles.s18.copyWith(
+                        color: AppColors.shade1,
+                      ),
+                    ),
+                  ),
+                ),
+                const WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: CopyButton(
+                    text: 'intraector',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          RichText(
+            text: TextSpan(
+              text: 'Telegram:',
+              style: AppStyles.s18.copyWith(
+                color: AppColors.shade1,
+              ),
+              children: [
+                WidgetSpan(
+                  alignment: PlaceholderAlignment.middle,
+                  child: TextButton(
+                    onPressed: () {
+                      launchUrl(
+                        Uri.parse('https://t.me/intraector'),
+                      );
+                    },
+                    child: Text(
+                      '@intraector',
                       style: AppStyles.s18.copyWith(
                         color: AppColors.shade1,
                       ),
