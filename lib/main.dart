@@ -38,7 +38,7 @@ class MainApp extends StatelessWidget {
       ],
       supportedLocales: L.delegate.supportedLocales,
       home: const MainScreen(),
-      title: 'Artur Saidov',
+      title: "Artur Saidov's CV",
     );
   }
 }
