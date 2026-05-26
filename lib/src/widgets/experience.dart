@@ -27,7 +27,7 @@ class Experience extends StatelessWidget {
         ],
       ),
       Exp(
-        company: 'Yakutia.Click',
+        company: 'Yakutia.Click, Russia',
         period: '[2020 - 2021] Flutter Developer',
         tasks: [
           'App development for iOS and Android',
