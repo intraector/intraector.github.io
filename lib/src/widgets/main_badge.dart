@@ -20,7 +20,7 @@ class MainBadge extends StatelessWidget {
           vertical: 8,
         ),
         child: Text(
-          context.s.resume.toUpperCase(),
+          context.l.resume.toUpperCase(),
           style: AppStyles.s26w900.copyWith(
             color: AppColors.shade2,
           ),

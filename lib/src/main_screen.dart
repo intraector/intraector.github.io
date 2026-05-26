@@ -11,10 +11,10 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xfff3efe6),
       body: Align(
-        alignment: Alignment.topCenter,
+        alignment: .topCenter,
         child: SingleChildScrollView(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 900),
+            constraints: const BoxConstraints(maxWidth: 1200),
             child: LayoutBuilder(
               builder: (context, constraints) {
                 return switch (constraints.maxWidth) {

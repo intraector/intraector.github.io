@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'generated/l10n.dart';
+import '_shared/generated/l10n.dart';
 import 'src/main_screen.dart';
 import 'src/theme/app_colors.dart';
 
@@ -25,14 +25,18 @@ class MainApp extends StatelessWidget {
             ),
           ),
         ),
+        buttonTheme: const ButtonThemeData(
+          buttonColor: AppColors.shade1,
+          textTheme: ButtonTextTheme.primary,
+        ),
       ),
       localizationsDelegates: const [
-        S.delegate,
+        L.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: S.delegate.supportedLocales,
+      supportedLocales: L.delegate.supportedLocales,
       home: const MainScreen(),
       title: 'Artur Saidov',
     );

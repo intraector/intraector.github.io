@@ -27,7 +27,7 @@ class _CopyButtonState extends State<CopyButton> {
           ? SizedBox(
               height: 40,
               child: Text(
-                ' ${context.s.copied}!',
+                ' ${context.l.copied}!',
                 style: const TextStyle(
                   color: AppColors.shade2,
                 ),

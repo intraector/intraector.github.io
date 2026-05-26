@@ -4,16 +4,16 @@ import '../theme/app_colors.dart';
 import '../theme/app_styles.dart';
 import '../utils/context_ext.dart';
 
-class Education extends StatelessWidget {
-  const Education({super.key});
+class General extends StatelessWidget {
+  const General({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         Text(
-          context.l.education.toUpperCase(),
+          context.l.about.toUpperCase(),
           style: AppStyles.s18.copyWith(
             color: AppColors.text,
             fontWeight: FontWeight.w900,
@@ -22,14 +22,7 @@ class Education extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          context.l.universityTitle,
-          style: AppStyles.s18.copyWith(
-            fontSize: 18,
-            color: AppColors.text,
-          ),
-        ),
-        Text(
-          context.l.universityPeriod,
+          'I develop apps for iOS and Android using Flutter (a Google technology).  With 5+ years of experience, I have built a variety of applications, focusing on simplicity and practical internal design to ensure long-term stability and easy maintenance. My experience covers the full development lifecycle, including UI implementation, backend integration, and final app store deployment.',
           style: AppStyles.s18.copyWith(
             color: AppColors.text,
           ),

@@ -1,13 +1,19 @@
 include: package:flutter_lints/flutter.yaml
 analyzer:
   exclude:
+    - build/**
     - test/.test_coverage.dart
     - lib/generated_plugin_registrant.dart
-    - lib/core/l10n/generated/**
-    - lib/generated/**
-    - mason/**
+    - lib/_shared/generated/**
+    - lib/firebase_options.dart
 formatter:
   page_width: 120
+  trailing_commas: preserve
+# Disabled: prefer_shorthands 0.4.7 pins analyzer_plugin ^0.13.10, which conflicts
+# with Dart 3.12.0's bundled analysis_server_plugin (>=0.3.8 → analyzer_plugin >=0.14.2),
+# aborting `dart analyze`. Re-enable once prefer_shorthands supports analyzer_plugin 0.14.x.
+# plugins:
+#   prefer_shorthands: ^0.4.7
 linter:
   rules:
     prefer_relative_imports: true
@@ -60,7 +66,6 @@ linter:
     prefer_conditional_assignment: true
     prefer_const_constructors_in_immutables: true
     prefer_contains: true
-    prefer_equal_for_default_values: true
     prefer_final_in_for_each: true
     prefer_for_elements_to_map_fromIterable: true
     prefer_function_declarations_over_variables: true
@@ -82,6 +87,7 @@ linter:
     prefer_typing_uninitialized_variables: true
     prefer_void_to_null: true
     recursive_getters: true
+    require_trailing_commas: true
     secure_pubspec_urls: true
     sized_box_for_whitespace: true
     sized_box_shrink_expand: true
@@ -134,6 +140,7 @@ linter:
     valid_regexps: true
     void_checks: true
     no_leading_underscores_for_local_identifiers: false
-    strict_top_level_inference: true
     unnecessary_underscores: true
     unnecessary_async: true
+    simplify_variable_pattern: true
+    simple_directive_paths: true

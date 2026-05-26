@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../generated/l10n.dart';
+import '../../_shared/generated/l10n.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_styles.dart';
 import '../utils/context_ext.dart';
@@ -9,23 +9,31 @@ import '../utils/context_ext.dart';
 class Experience extends StatelessWidget {
   const Experience({super.key});
 
-  List<Exp> experience(S s) {
+  List<Exp> experience(L s) {
     return [
       Exp(
-        company: s.company3Name,
+        company: 'SimpleCode, Kazakhstan',
         url: 'https://simplecode.kz',
-        period: s.company3Period,
-        tasks: s.company3Tasks.split('|'),
+        period: '[2021 - 2026] Flutter Lead Developer',
+        tasks: [
+          'Apps development for iOS and Android',
+          'App architecture design',
+          'Estimation of tasks',
+          'Communication with clients',
+          'Code review',
+          'Mentoring junior developers',
+          'Interviewing new developers',
+          "Development of the company's internal tools",
+        ],
       ),
       Exp(
-        company: s.company2Name,
-        period: s.company2Period,
-        tasks: s.company2Tasks.split('|'),
-      ),
-      Exp(
-        company: s.company1Name,
-        period: s.company1Period,
-        tasks: s.company1Tasks.split('|'),
+        company: 'Yakutia.Click',
+        period: '[2020 - 2021] Flutter Developer',
+        tasks: [
+          'App development for iOS and Android',
+          'App architecture design',
+          'Estimation of tasks',
+        ],
       ),
     ];
   }
@@ -33,17 +41,17 @@ class Experience extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         Text(
-          context.s.experience.toUpperCase(),
+          context.l.experience.toUpperCase(),
           style: AppStyles.s18.copyWith(
             color: AppColors.text,
-            fontWeight: FontWeight.w900,
+            fontWeight: .w900,
             letterSpacing: 2,
           ),
         ),
-        for (final item in experience(context.s)) ExpTile(exp: item),
+        for (final item in experience(context.l)) ExpTile(exp: item),
       ],
     );
   }
@@ -81,7 +89,7 @@ class ExpTile extends StatelessWidget {
       ),
     );
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         const SizedBox(height: 20),
         if (exp.url != null)
@@ -93,11 +101,11 @@ class ExpTile extends StatelessWidget {
           )
         else
           Padding(
-            padding: const EdgeInsets.only(left: 12),
+            padding: const .only(left: 12),
             child: title,
           ),
         Padding(
-          padding: const EdgeInsets.only(left: 12),
+          padding: const .only(left: 12),
           child: Text(
             exp.period,
             style: AppStyles.s18.copyWith(
@@ -108,7 +116,7 @@ class ExpTile extends StatelessWidget {
         const SizedBox(height: 8),
         for (final item in exp.tasks)
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 4, 0, 0),
+            padding: const .fromLTRB(0, 4, 0, 0),
             child: Text(
               '  • $item',
               style: AppStyles.s18.copyWith(

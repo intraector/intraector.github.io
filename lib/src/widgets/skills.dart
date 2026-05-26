@@ -13,7 +13,7 @@ class Skills extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          context.s.profSkills.toUpperCase(),
+          context.l.profSkills.toUpperCase(),
           style: AppStyles.s18.copyWith(
             color: AppColors.text,
             fontWeight: FontWeight.w900,
@@ -22,7 +22,14 @@ class Skills extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Text(
-          context.s.skillsList,
+          'Developing complex applications with multiple features and integrations. Strong problem-solving skills and ability to quickly learn new technologies.',
+          style: AppStyles.s18.copyWith(
+            color: AppColors.text,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'Flutter, Dart, Android, iOS, Flutter Web, Bloc, Provider, MVVM, MVP, Dio, Http, Clean Architecture, SOLID, REST, Google Maps, Git, Firebase, Storage, Cloud Messaging, Cloud Functions, authorization, animations, multiple app flavors/targets, dependency injection, unit testing, mobile analytics, publishing',
           style: AppStyles.s18.copyWith(
             color: AppColors.text,
           ),

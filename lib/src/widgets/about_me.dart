@@ -6,31 +6,75 @@ import '../theme/app_styles.dart';
 import '../utils/context_ext.dart';
 import 'copy_button.dart';
 
+class AppItem {
+  AppItem({
+    required this.name,
+    this.androidUrl,
+    this.iosUrl,
+  });
+
+  final String? androidUrl;
+  final String? iosUrl;
+  final String name;
+
+  bool get isNotEmpty => iosUrl != null || androidUrl != null;
+}
+
 class AboutMe extends StatelessWidget {
-  const AboutMe({super.key, this.constraints});
+  AboutMe({super.key, this.constraints});
 
   final BoxConstraints? constraints;
-
-  Map<String, String> get portfolio => const {
-        'myQG iOS': 'https://apps.apple.com/app/myqg/id6566190317',
-        'myQG Android': 'https://play.google.com/store/apps/details?id=kz.qazaqgaz.mygq',
-        'Protarget iOS': 'https://apps.apple.com/app/pro-target/id6736693468',
-        'Protarget Android': 'https://play.google.com/store/apps/details?id=kz.protarget.protarget',
-        'Tayyab Banking Android': 'https://play.google.com/store/apps/details?id=co.tayyab.app&gl=kz',
-        'Tayyab Banking iOS': 'https://apps.apple.com/tr/app/tayyab/id6446256809',
-        'Enbek.kz Android': 'https://play.google.com/store/apps/details?id=kz.enbek.emobi&gl=kz',
-        'Enbek.kz iOS':
-            'https://apps.apple.com/kz/app/enbek-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%B8-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81/id6444959650',
-        'Enbek HR Android': 'https://play.google.com/store/apps/details?id=kz.enbek.hr&gl=kz',
-        'Enbek HR iOS':
-            'https://apps.apple.com/kz/app/enbek-hr-%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/id6448756659',
-        'CenterHome Android': 'https://play.google.com/store/apps/details?id=kz.bcc.chome&gl=kz',
-        'CenterHome iOS': 'https://apps.apple.com/tr/app/center-home/id1593535565',
-        'Upravdom Android': 'https://play.google.com/store/apps/details?id=kz.upravdom.osi&gl=kz',
-        'PoiskVagona iOS': 'https://apps.apple.com/tr/app/poiskvagona-kz/id1596454186',
-        'ZanBar iOS': 'https://apps.apple.com/tr/app/zanbar/id1516103496',
-        'ZapApp Android': 'https://play.google.com/store/apps/details?id=com.tenebre1592.ZapApp',
-      };
+  final portfolio = [
+    AppItem(
+      name: 'Enbek Fsm',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.enbek.fsm',
+      iosUrl: 'https://apps.apple.com/kz/app/fsmsocial-2-0/id6755683239',
+    ),
+    AppItem(
+      name: 'QazaqGaz: myQG',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.qazaqgaz.mygq',
+      iosUrl: 'https://apps.apple.com/app/myqg/id6566190317',
+    ),
+    AppItem(
+      name: 'Protarget',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.protarget.protarget',
+      iosUrl: 'https://apps.apple.com/app/pro-target/id6736693468',
+    ),
+    AppItem(
+      name: 'Tayyab Banking',
+      androidUrl: 'https://play.google.com/store/apps/details?id=co.tayyab.app&gl=kz',
+      iosUrl: 'https://apps.apple.com/tr/app/tayyab/id6446256809',
+    ),
+    AppItem(
+      name: 'Enbek.kz',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.enbek.emobi&gl=kz',
+      iosUrl:
+          'https://apps.apple.com/kz/app/enbek-hr-%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/id6448756659',
+    ),
+    AppItem(
+      name: 'Enbek HR',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.enbek.hr&gl=kz',
+      iosUrl:
+          'https://apps.apple.com/kz/app/enbek-hr-%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/id6448756659',
+    ),
+    AppItem(
+      name: 'CenterHome',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.bcc.chome&gl=kz',
+      iosUrl: 'https://apps.apple.com/tr/app/center-home/id1593535565',
+    ),
+    AppItem(
+      name: 'Upravdom',
+      androidUrl: 'https://play.google.com/store/apps/details?id=kz.upravdom.osi&gl=kz',
+    ),
+    AppItem(
+      name: 'PoiskVagona',
+      iosUrl: 'https://apps.apple.com/tr/app/poiskvagona-kz/id1596454186',
+    ),
+    AppItem(
+      name: 'ZanBar',
+      iosUrl: 'https://apps.apple.com/tr/app/zanbar/id1516103496',
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +86,7 @@ class AboutMe extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            context.s.contacts.toUpperCase(),
+            context.l.contacts.toUpperCase(),
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
               fontWeight: FontWeight.w900,
@@ -148,7 +192,7 @@ class AboutMe extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           Text(
-            context.s.currentlyBased.toUpperCase(),
+            context.l.currentlyBased.toUpperCase(),
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
               fontWeight: FontWeight.w900,
@@ -157,22 +201,23 @@ class AboutMe extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            context.s.location2,
+            context.l.location2,
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            context.s.location1,
+            context.l.location1,
             style: AppStyles.s18.copyWith(
               decoration: TextDecoration.lineThrough,
+              decorationColor: AppColors.shade1,
               color: AppColors.shade1,
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            context.s.location0,
+            context.l.location0,
             style: AppStyles.s18.copyWith(
               decoration: TextDecoration.lineThrough,
               decorationColor: AppColors.shade1,
@@ -181,7 +226,7 @@ class AboutMe extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           Text(
-            context.s.aboutMe.toUpperCase(),
+            context.l.qualities.toUpperCase(),
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
               fontWeight: FontWeight.w900,
@@ -189,22 +234,16 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
+
           Text(
-            context.s.aboutMeLine1,
-            style: AppStyles.s18.copyWith(
-              color: AppColors.shade1,
-            ),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            context.s.aboutMeLine2,
+            'Analytic mind. Initiative-taking, hard-working, team-oriented, stress-resistant, attentive, neat.',
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
             ),
           ),
           const SizedBox(height: 40),
           Text(
-            context.s.portfolio.toUpperCase(),
+            context.l.portfolio.toUpperCase(),
             style: AppStyles.s18.copyWith(
               color: AppColors.shade1,
               fontWeight: FontWeight.w900,
@@ -212,15 +251,36 @@ class AboutMe extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          for (final item in portfolio.entries)
-            TextButton(
-              child: Text(item.key),
-              onPressed: () {
-                launchUrl(
-                  Uri.parse(item.value),
-                );
-              },
-            ),
+          for (final item in portfolio)
+            if (item.isNotEmpty)
+              Wrap(
+                children: [
+                  Text(
+                    item.name,
+                    style: AppStyles.s18.copyWith(
+                      color: AppColors.shade1,
+                    ),
+                  ),
+                  if (item.iosUrl != null)
+                    TextButton(
+                      child: Text('iOS'),
+                      onPressed: () {
+                        launchUrl(
+                          Uri.parse(item.iosUrl!),
+                        );
+                      },
+                    ),
+                  if (item.androidUrl != null)
+                    TextButton(
+                      child: Text('Android'),
+                      onPressed: () {
+                        launchUrl(
+                          Uri.parse(item.androidUrl!),
+                        );
+                      },
+                    ),
+                ],
+              ),
         ],
       ),
     );

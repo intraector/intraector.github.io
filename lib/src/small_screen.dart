@@ -5,8 +5,10 @@ import 'utils/context_ext.dart';
 import 'widgets/about_me.dart';
 import 'widgets/education.dart';
 import 'widgets/experience.dart';
+import 'widgets/general.dart';
 import 'widgets/main_badge.dart';
 import 'widgets/skills.dart';
+import 'widgets/zero_to_hero.dart';
 
 class SmallScreen extends StatelessWidget {
   const SmallScreen({super.key});
@@ -14,17 +16,17 @@ class SmallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         const MainBadge(),
         Center(
-          child: Image.asset('lib/assets/face.jpg'),
+          child: Image.asset('lib/assets/face.png'),
         ),
         const SizedBox(height: 16),
         Center(
           child: FittedBox(
             child: SelectableText(
-              context.s.name.toUpperCase(),
+              context.l.name.toUpperCase(),
               style: AppStyles.s36w900.copyWith(
                 letterSpacing: 9,
               ),
@@ -34,23 +36,31 @@ class SmallScreen extends StatelessWidget {
         Center(
           child: FittedBox(
             child: Text(
-              context.s.jobTitle.toUpperCase(),
+              context.l.jobTitle.toUpperCase(),
               style: AppStyles.s26w900,
             ),
           ),
         ),
-        const SizedBox(height: 16),
-        const AboutMe(),
+        const SizedBox(height: 20),
+        AboutMe(),
         const Padding(
-          padding: EdgeInsets.all(32),
+          padding: .fromLTRB(32, 32, 32, 0),
+          child: General(),
+        ),
+        const Padding(
+          padding: .fromLTRB(32, 24, 32, 0),
+          child: ZeroToHero(),
+        ),
+        const Padding(
+          padding: .fromLTRB(32, 24, 32, 0),
           child: Experience(),
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 32),
+          padding: .fromLTRB(32, 24, 32, 0),
           child: Skills(),
         ),
         const Padding(
-          padding: EdgeInsets.all(32),
+          padding: .fromLTRB(32, 24, 32, 32),
           child: Education(),
         ),
       ],
