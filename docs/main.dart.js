@@ -39977,7 +39977,7 @@ p=B.b6.j(0,s)
 if(q===(p==null?s:p))return!0}return!1}}
 A.Jg.prototype={
 V(a){var s=null
-return new A.wI(B.Va,"Artur Saidov",A.rm(s,B.Gt,s,B.jO,new A.rg(A.ar_(s,s,s,s,s,s,s,s,s,B.jH,s,s,s,s,s,s,s,s,B.a2l,s)),s),B.SM,B.qo,s)}}
+return new A.wI(B.Va,"Artur Saidov's CV",A.rm(s,B.Gt,s,B.jO,new A.rg(A.ar_(s,s,s,s,s,s,s,s,s,B.jH,s,s,s,s,s,s,s,s,B.a2l,s)),s),B.SM,B.qo,s)}}
 A.Ew.prototype={
 V(a){var s,r,q=null,p=t.E,o=A.hn(A.c([A.auA("lib/assets/face.png",0.8),A.atb(new A.ah(0,375,0,1/0))],p),B.cI,B.bn),n=t.t0
 A.cR(a,B.aj,n).toString
@@ -40091,7 +40091,7 @@ A.cR(a,B.aj,n).toString
 s=A.c([A.bI(A.dG("Experience",q,"experience",A.c([],t.G),q).toUpperCase(),q,B.S.k5(B.ay,B.aZ,2))],t.E)
 A.cR(a,B.aj,n).toString
 n=t.s
-n=[new A.I1("SimpleCode, Kazakhstan","[2021 - 2026] Flutter Lead Developer","https://simplecode.kz",A.c(["Apps development for iOS and Android",p,o,"Communication with clients","Code review","Mentoring junior developers","Interviewing new developers","Development of the company's internal tools"],n)),new A.I1("Yakutia.Click","[2020 - 2021] Flutter Developer",q,A.c(["App development for iOS and Android",p,o],n))]
+n=[new A.I1("SimpleCode, Kazakhstan","[2021 - 2026] Flutter Lead Developer","https://simplecode.kz",A.c(["Apps development for iOS and Android",p,o,"Communication with clients","Code review","Mentoring junior developers","Interviewing new developers","Development of the company's internal tools"],n)),new A.I1("Yakutia.Click, Russia","[2020 - 2021] Flutter Developer",q,A.c(["App development for iOS and Android",p,o],n))]
 r=0
 for(;r<2;++r)s.push(new A.I2(n[r],q))
 return A.hn(s,B.av,B.bn)}}
